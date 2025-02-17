@@ -6,6 +6,7 @@ Collection of publicly available IPTV (Internet Protocol television) channels fr
 
 - 🚀 [How to use?](#how-to-use)
 - 📺 [Playlists](#playlists)
+- 🗓 [EPG](#epg)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
@@ -23,20 +24,14 @@ Simply insert one of the links below into [any video player](https://github.com/
 
 ## Playlists
 
-There are several versions of playlists that differ in the way they are grouped.
+There are several versions of playlists that differ in the way they are grouped. As of January 30th, 2024, we have stopped distributing NSFW channels. For more information, please look at [this issue](https://github.com/iptv-org/iptv/issues/15723).
 
 ### Main playlist
 
-Playlist includes all known channels except adult channels.
+This playlist includes all known channels available in this repository.
 
 ```
 https://iptv-org.github.io/iptv/index.m3u
-```
-
-And here is the full version:
-
-```
-https://iptv-org.github.io/iptv/index.nsfw.m3u
 ```
 
 ### Grouped by category
@@ -114,6 +109,10 @@ Same thing, but split up into separate files:
 #include "./.readme/_regions.md"
 
 </details>
+
+## EPG
+
+[Electronic Program Guide](https://en.wikipedia.org/wiki/Electronic_program_guide) for most of the channels can be downloaded using utilities published in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
 
 ## Database
 
