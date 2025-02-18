@@ -23,7 +23,7 @@ https://adultswim-vodlive.cdn.turner.com/live/metalocalypse/stream_de.m3u8
 https://adultswim-vodlive.cdn.turner.com/live/mr-pickles/stream_de.m3u8
 #EXTINF:-1 tvg-id="AdultSwimOffTheAir.us",Adult Swim Off The Air (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/off-the-air/stream_de.m3u8
-#EXTINF:-1 tvg-id="",Adult Swim Primal (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="AdultSwimPrimal.us",Adult Swim Primal (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/primal/stream_de.m3u8
 #EXTINF:-1 tvg-id="AdultSwimRickandMorty.us",Adult Swim Rick and Morty (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/rick-and-morty/stream_de.m3u8
@@ -51,5 +51,5 @@ https://adultswim-vodlive.cdn.turner.com/live/test-3/stream_de.m3u8
 https://adultswim-vodlive.cdn.turner.com/live/test-4/stream_de.m3u8
 #EXTINF:-1 tvg-id="",test Channel 5 (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/test-5/stream_de.m3u8
-#EXTINF:-1 tvg-id="",Toonami (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Toonami.fr",Toonami (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/toonami/stream_de.m3u8
