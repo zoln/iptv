@@ -25,12 +25,10 @@ jobs:
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
       - name: install dependencies
         run: npm install
-      - name: load api data
-        run: npm run api:load
       - name: update internal playlists
         run: npm run playlist:update --silent >> $GITHUB_OUTPUT
         id: playlist-update

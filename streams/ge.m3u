@@ -4,7 +4,7 @@ https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8
 #EXTINF:-1 tvg-id="2TV.ge",2TV (720p)
 https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
 #EXTINF:-1 tvg-id="AbazaTV.ru",Abaza TV
-http://clients.apsny.camera/tv_abaza_tv/index.m3u8
+https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
 #EXTINF:-1 tvg-id="Formula.ge",Formula (1080p)
 https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8
 #EXTINF:-1 tvg-id="Formula.ge",Formula (1080p)
@@ -21,3 +21,5 @@ https://livestream.palitra.ge/hls/palitratv/index.m3u8
 https://live.postv.media/stream/index.m3u8
 #EXTINF:-1 tvg-id="RioniTV.ge",Rioni TV (720p) [Not 24/7]
 http://video.rionitv.com:9090/hls/live/rioni.m3u8
+#EXTINF:-1 tvg-id="TVC.ge",TVC (1080p)
+http://31.146.5.178:8087/play/a009/index.m3u8

@@ -35,8 +35,8 @@ async function main() {
   const addRequests = await loader.load({ labels: ['streams:add'] })
   const buffer = new Dictionary()
   addRequests.forEach((issue: Issue) => {
-    const channelId = issue.data.get('channel_id') || undefined
-    const streamUrl = issue.data.get('stream_url') || undefined
+    const channelId = issue.data.getString('channel_id') || undefined
+    const streamUrl = issue.data.getString('stream_url')
 
     const result = new Dictionary({
       issueNumber: issue.number,
@@ -61,8 +61,8 @@ async function main() {
   logger.info('checking streams:edit requests...')
   const editRequests = await loader.load({ labels: ['streams:edit'] })
   editRequests.forEach((issue: Issue) => {
-    const channelId = issue.data.get('channel_id') || undefined
-    const streamUrl = issue.data.get('stream_url') || undefined
+    const channelId = issue.data.getString('channel_id') || undefined
+    const streamUrl = issue.data.getString('stream_url') || undefined
 
     const result = new Dictionary({
       issueNumber: issue.number,
@@ -82,7 +82,7 @@ async function main() {
   logger.info('checking broken streams reports...')
   const brokenStreamReports = await loader.load({ labels: ['broken stream'] })
   brokenStreamReports.forEach((issue: Issue) => {
-    const streamUrl = issue.data.get('stream_url') || undefined
+    const brokenLinks = issue.data.getString('broken_links') || undefined
 
     const result = new Dictionary({
       issueNumber: issue.number,
@@ -91,8 +91,8 @@ async function main() {
       status: undefined
     })
 
-    if (!streamUrl) result.set('status', 'missing_link')
-    else if (groupedStreams.missing(streamUrl)) result.set('status', 'invalid_link')
+    if (!brokenLinks) result.set('status', 'missing_link')
+    else if (groupedStreams.missing(brokenLinks)) result.set('status', 'invalid_link')
     else result.set('status', 'pending')
 
     report.add(result.data())
